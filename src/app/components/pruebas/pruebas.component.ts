@@ -21,4 +21,13 @@ export class PruebasComponent {
   }
 
   visible: boolean = false;
+
+  toggleDarkMode() {
+    const element = document.querySelector('html');
+    if (element) {
+      element.classList.toggle('my-app-dark');
+    }
+
+    console.log('element:', element);
+  }
 }
